@@ -1,83 +1,91 @@
-# Hacking Tools
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacking Tools</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        .login-form {
-            margin-bottom: 20px;
-        }
-        .login-form input {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-        }
-        .login-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .features {
-            display: none;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>MyTube</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #202020;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header input {
+      padding: 5px;
+      width: 400px;
+    }
+    .container {
+      display: flex;
+    }
+    nav {
+      width: 200px;
+      background: #e0e0e0;
+      padding: 10px;
+      height: 100vh;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .video-card {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .video-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .video-title {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    .video-desc {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Hacking Tools</h1>
-    <div class="login-form">
-        <input type="text" id="username" placeholder="Username" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button onclick="login()">Login</button>
-    </div>
-    <div class="features" id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Tool 1: Network Scanner</li>
-            <li>Tool 2: Password Cracker</li>
-            <li>Tool 3: Vulnerability Scanner</li>
-            <li>Tool 4: Packet Sniffer</li>
-        </ul>
-    </div>
-</div>
+  <header>
+    <h1>MyTube</h1>
+    <input type="text" placeholder="Search">
+  </header>
 
-<script>
-    function login() {
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        if (username && password) {
-            document.getElementById('features').style.display = 'block';
-        } else {
-            alert('Please enter both username and password.');
-        }
-    }
-</script>
+  <div class="container">
+    <nav>
+      <p>Home</p>
+      <p>Trending</p>
+      <p>Subscriptions</p>
+      <p>Library</p>
+    </nav>
+
+    <main class="content">
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Video Thumbnail">
+        <div class="video-title">Sample Video Title</div>
+        <div class="video-desc">Channel Name · 1M views · 1 day ago</div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Video Thumbnail">
+        <div class="video-title">Another Video</div>
+        <div class="video-desc">Channel Name · 500k views · 2 days ago</div>
+      </div>
+      <!-- More video cards here -->
+    </main>
+  </div>
 
 </body>
 </html>
