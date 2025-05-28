@@ -1,41 +1,91 @@
-# CREAT HACKING TOLLS
+# Create an App Like YouTube for Watching Videos
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacking Tools</title>
+    <title>Video Streaming App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Hacking Tools</h1>
+        <h1>Video Streaming App</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#subscriptions">Subscriptions</a></li>
+                <li><a href="#library">Library</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Tool List</h2>
-            <ul>
-                <li>Tool 1: Nmap</li>
-                <li>Tool 2: Metasploit</li>
-                <li>Tool 3: Wireshark</li>
-                <li>Tool 4: Burp Suite</li>
-                <li>Tool 5: Aircrack-ng</li>
-            </ul>
+        <section id="home">
+            <h2>Featured Videos</h2>
+            <div class="video-container">
+                <div class="video">
+                    <h3>Video Title 1</h3>
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>Video Title 2</h3>
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Download Links</h2>
-            <ul>
-                <li><a href="https://nmap.org/download.html">Download Nmap</a></li>
-                <li><a href="https://www.metasploit.com/download">Download Metasploit</a></li>
-                <li><a href="https://www.wireshark.org/download.html">Download Wireshark</a></li>
-                <li><a href="https://portswigger.net/burp/communitydownload">Download Burp Suite</a></li>
-                <li><a href="https://www.aircrack-ng.org/downloads.html">Download Aircrack-ng</a></li>
-            </ul>
+        <section id="trending">
+            <h2>Trending Videos</h2>
+            <div class="video-container">
+                <div class="video">
+                    <h3>Video Title 3</h3>
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>Video Title 4</h3>
+                    <video controls>
+                        <source src="video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="subscriptions">
+            <h2>Your Subscriptions</h2>
+            <div class="video-container">
+                <div class="video">
+                    <h3>Video Title 5</h3>
+                    <video controls>
+                        <source src="video5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="library">
+            <h2>Your Library</h2>
+            <div class="video-container">
+                <div class="video">
+                    <h3>Video Title 6</h3>
+                    <video controls>
+                        <source src="video6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Hacking Tools. All rights reserved.</p>
+        <p>&copy; 2023 Video Streaming App. All rights reserved.</p>
     </footer>
 </body>
 </html>
